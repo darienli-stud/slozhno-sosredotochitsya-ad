@@ -10,8 +10,6 @@
   background-attachment: fixed;
 }
 
-/*Шапка*/
-
 .header {
   min-block-size: 100vh;
   padding: 20px;
@@ -20,7 +18,7 @@
   grid-template-rows: 1fr min-content 1fr;
 }
 
-/*Кнопки навигации*/
+/*навигация*/
 
 .header__theme-menu-list {
   display: flex;
@@ -36,7 +34,7 @@
   background: transparent;
 }
 
-/*Действия на кнопки*/
+/*действия кнопок*/
 
 .header__theme-menu-button_active {
   pointer-events: none;
@@ -56,7 +54,7 @@
   cursor: pointer;
 }
 
-/*РЕС*/
+/*Rec*/
 
 .decorative__element {
   position: absolute;
@@ -84,7 +82,7 @@
   filter: drop-shadow(0px 0px 4px var(--accent-color));
 }
 
-/* Стили углов*/
+/* углолки*/
 
 .frame::before {
   position: absolute;
@@ -110,7 +108,7 @@
   margin: 20px;
 }
 
-/*Заголовок шапки*/
+/*шапка, ее заголовок*/
 
 .header__title {
   margin-left: -20px;
@@ -136,7 +134,7 @@
   align-self: center;
 }
 
-/*Дизайн заголовков всех секций*/
+/*дизайн заголовков всех секций*/
 
 .question__section-title {
   color: var(--btn-color);
@@ -145,14 +143,14 @@
   font-size: var(--font-size);
 }
 
-/*Дизайн текста всех секций*/
+/*дизайн текста всех секций*/
 
 .question__section-answer-text {
   font-size: var(--font-size);
   color: var(--text-color);
 }
 
-/*Ссылки*/
+/*ссылки*/
 
 .question__section-answer-link {
   text-decoration: none;
@@ -171,7 +169,7 @@
   border: 1px solid var(--text-color);
 }
 
-/*Первая секция с вопросами*/
+/*первая секция*/
 
 .question__section__one {
   display: grid;
@@ -190,7 +188,7 @@
   padding-block-end: 10px;
 }
 
-/*Вторая секция с вопросами*/
+/*вторая секция*/
 
 .question__section-two {
   padding-block-start: 80px;
@@ -212,9 +210,9 @@
   margin-block-end: 10px;
 }
 
-/*Третья секция с вопросами*/
+/*третья секция*/
 
-.question__section__fhree {
+.question__section__three {
   display: grid;
   grid-template-columns: 34% 66%;
   padding-block-end: 80px;
@@ -225,16 +223,16 @@
   font-weight: 400;
 }
 
-.question__section-answer-fhree {
+.question__section-answer-three {
   display: grid;
   gap: 20px;
 }
 
-.question__section-answer-text-fhree {
+.question__section-answer-text-three {
   padding-block-start: 10px;
 }
 
-/*Секция с картинками*/
+/*секция с изображениями*/
 
 .question__section__image {
   padding-block-end: 60px;
@@ -280,8 +278,6 @@
   grid-column: 2 / 4;
 }
 
-/*Подвал*/
-
 .footer {
   min-block-size: 100vh;
   padding: 20px;
@@ -300,7 +296,7 @@
   
 }
 
-/*Медиа запрос под 768px*/
+/*медиа запрос под 768px*/
 
 @media (max-width:768px) {
   .header__theme-menu {
@@ -342,7 +338,7 @@
     max-inline-size: 236px;
   }
   
-  .question__section__fhree {
+  .question__section__three {
     display: grid;
     grid-template-columns: 35% 65%;
     padding-block-end: 80px;
@@ -355,7 +351,7 @@
   }
 }
 
-/*Медиа запрос под 375px*/
+/*медиа запрос под 375px*/
 
 @media (max-width:560px) {
  .header {
@@ -396,7 +392,7 @@
   flex-direction: column;
 }
 
-.question__section__fhree {
+.question__section__three {
   margin: 0 10px;
   display: flex;
   flex-direction: column;
